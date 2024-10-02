@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Screen</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: orange;
+            background-color: black;
+            border: 2px solid orange;
+            border-radius: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0 0 10px orange;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0 0 20px orange;
+        }
+    </style>
+</head>
+<body>
+    <img src="IMAGE_URL_HERE" alt="Image">
+    <div class="button" onclick="goBack()">Go Back</div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
